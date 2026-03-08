@@ -6,17 +6,21 @@ const OfferSection = () => {
 
             {/* --- SECTION 1: Top Image Background & Card --- */}
             <div className="w-100 d-flex flex-column align-items-center mb-5">
-                <div
-                    className="w-100 position-relative d-flex justify-content-center"
-                    style={{
-                        backgroundImage: 'url("/images/image 44.png")',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat',
-                        minHeight: '450px',
-                        height: '55vh'
-                    }}
-                >
+                <div className="w-100 px-3 px-md-4 mt-3">
+                    <div
+                        className="w-100 position-relative d-flex justify-content-center"
+                        style={{
+                            backgroundImage: 'url("/images/image 44.png")',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            minHeight: '450px',
+                            height: '55vh',
+                            borderRadius: '0px'
+
+                        }}
+                    >
+                    </div>
                 </div>
 
                 {/* Overlapping White Card */}
