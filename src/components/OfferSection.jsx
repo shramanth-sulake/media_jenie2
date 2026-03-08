@@ -3,6 +3,14 @@ import React from 'react';
 const OfferSection = () => {
     return (
         <div className="w-100 bg-white d-flex flex-column pb-5">
+            <style>{`
+                @media (min-width: 992px) {
+                    .custom-padding-x {
+                        padding-left: 8rem !important;
+                        padding-right: 8rem !important;
+                    }
+                }
+            `}</style>
 
             {/* --- SECTION 1: Top Image Background & Card --- */}
             <div className="w-100 d-flex flex-column align-items-center mb-5">
@@ -24,9 +32,9 @@ const OfferSection = () => {
                 </div>
 
                 {/* Overlapping White Card */}
-                <div className="w-100 container position-relative" style={{ zIndex: 20, marginTop: '-8rem', paddingLeft: '8rem', paddingRight: '8rem' }}>
+                <div className="w-100 container position-relative px-3 custom-padding-x" style={{ zIndex: 20, marginTop: '-8rem' }}>
                     <div className="bg-white p-4 p-md-5 border-md-0 border shadow-sm" style={{ boxShadow: '0px 15px 60px rgba(0,0,0,0.1) !important' }}>
-                        <h2 className="fw-bold text-dark mb-4" style={{ fontSize: '2.5rem', lineHeight: '1.25', letterSpacing: '-0.02em' }}>
+                        <h2 className="fw-bold text-dark mb-4" style={{ fontSize: 'clamp(1.8rem, 5vw, 2.5rem)', lineHeight: '1.25', letterSpacing: '-0.02em' }}>
                             Problem you are facing, and we <br className="d-none d-md-block" /> understand it well here
                         </h2>
                         <div className="mb-5 text-secondary mt-4" style={{ fontSize: '1.1rem', lineHeight: '1.6', maxWidth: '500px', marginTop: '2rem' }}>
@@ -52,12 +60,12 @@ const OfferSection = () => {
             </div>
 
             {/* --- SECTION 2: Yellow Audit Banner --- */}
-            <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
+            <div className="w-100 container px-3 custom-padding-x py-4 mt-5 mb-4">
                 <div className="row g-0 align-items-center rounded-4 position-relative overflow-hidden shadow-sm" style={{ backgroundColor: '#fde047' }}>
 
                     {/* Content Left */}
                     <div className="col-12 col-md-8 p-4 p-md-5 position-relative" style={{ zIndex: 2 }}>
-                        <h2 className="fw-bold text-dark mb-4" style={{ fontSize: '2.4rem', lineHeight: '1.25', letterSpacing: '-0.02em', color: '#1f2937' }}>
+                        <h2 className="fw-bold text-dark mb-4" style={{ fontSize: 'clamp(1.8rem, 5vw, 2.4rem)', lineHeight: '1.25', letterSpacing: '-0.02em', color: '#1f2937' }}>
                             How we solve the problem and<br />
                             what is our solution?
                         </h2>
@@ -100,7 +108,7 @@ const OfferSection = () => {
             </div>
 
             {/* --- SECTION 3: Our Approach/ framework --- */}
-            <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
+            <div className="w-100 container px-3 custom-padding-x py-4 mt-5 mb-4">
                 <h3 className="fw-bold text-dark mb-4" style={{ fontSize: '1.75rem' }}>Our Approach/ framework</h3>
 
                 <div className="position-relative overflow-hidden rounded-3" style={{ backgroundColor: '#f0f0f0', minHeight: '400px' }}>
@@ -152,7 +160,7 @@ const OfferSection = () => {
             </div>
 
             {/* --- SECTION 4: Our Process Flowchart --- */}
-            <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
+            <div className="w-100 container px-3 custom-padding-x py-4 mt-5 mb-4">
                 <h3 className="fw-bold text-dark mb-4" style={{ fontSize: '1.75rem' }}>Our Process</h3>
                 <img
                     src="/images/MediaJenie-Website-Dev-Process-Full 1.png"

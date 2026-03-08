@@ -14,14 +14,14 @@ const HeroSection = () => {
 
             {/* Main Content */}
             <main className="w-100 container d-flex flex-column align-items-center justify-content-center text-center" style={{ paddingTop: '7rem', paddingBottom: '7rem' }}>
-                <h1 className="fw-bold text-dark mb-4" style={{ fontSize: '3.5rem', lineHeight: '1.15', letterSpacing: '-0.02em' }}>
+                <h1 className="fw-bold text-dark mb-4" style={{ fontSize: 'clamp(2.2rem, 8vw, 3.5rem)', lineHeight: '1.15', letterSpacing: '-0.02em' }}>
                     Yes. This is the page you <br className="d-none d-md-block" />
                     searched for!
                 </h1>
 
-                <p className="mb-5" style={{ fontSize: '1.5rem', color: '#4b5563', maxWidth: '850px', lineHeight: '1.6' }}>
+                <p className="mb-5 px-3" style={{ fontSize: 'clamp(1.15rem, 4vw, 1.5rem)', color: '#4b5563', maxWidth: '850px', lineHeight: '1.6' }}>
                     We help organizations <strong className="fw-semibold text-dark">generate predictable leads</strong> through<br className="d-none d-md-block" />
-                          our Proprietary <strong className="fw-semibold text-dark">Decision-Science Framework</strong>
+                    our Proprietary <strong className="fw-semibold text-dark">Decision-Science Framework</strong>
                 </p>
 
                 <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 w-100 mt-2">

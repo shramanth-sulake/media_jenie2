@@ -3,12 +3,20 @@ import React from 'react';
 const CapabilitySection = () => {
     return (
         <div className="w-100 bg-white d-flex flex-column align-items-center">
-            <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
+            <style>{`
+                @media (min-width: 992px) {
+                    .custom-padding-x {
+                        padding-left: 8rem !important;
+                        padding-right: 8rem !important;
+                    }
+                }
+            `}</style>
+            <div className="w-100 container px-3 custom-padding-x py-4 mt-5 mb-4">
                 <div className="text-center mb-5">
-                    <h2 className="fw-bold text-dark mb-4" style={{ fontSize: '3.5rem', lineHeight: '1.25', letterSpacing: '-0.02em', color: '#2b2b2b' }}>
+                    <h2 className="fw-bold text-dark mb-4" style={{ fontSize: 'clamp(2rem, 6vw, 3.5rem)', lineHeight: '1.25', letterSpacing: '-0.02em', color: '#2b2b2b' }}>
                         Capability: Your extended-team <br className="d-none d-md-block" /> for reliable lead-generation
                     </h2>
-                    <p className="text-dark" style={{ fontSize: '1.5rem', color: '#333', fontWeight: '500' }}>
+                    <p className="text-dark" style={{ fontSize: 'clamp(1.15rem, 4vw, 1.5rem)', color: '#333', fontWeight: '500' }}>
                         Get a dedicated lead-gen team that brings <br className="d-none d-md-block" /> 40+ skills in marketing & growth, to your brand.
                     </p>
                 </div>

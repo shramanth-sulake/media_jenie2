@@ -91,8 +91,16 @@ const CaseSection = () => {
         : 30;
 
     return (
-        <div className="w-100 container-fluid py-4 mt-5 mb-4" style={{ paddingLeft: '12.5rem', paddingRight: '0' }}>
-            <h2 className="fw-bold text-dark mb-5" style={{ fontSize: '2.5rem', letterSpacing: '-0.02em' }}>
+        <div className="w-100 container-fluid custom-padding-left py-4 mt-5 mb-4" style={{ paddingRight: '0' }}>
+            <style>{`
+                .custom-padding-left { padding-left: 1rem; }
+                .custom-padding-right { padding-right: 1rem; }
+                @media (min-width: 992px) {
+                    .custom-padding-left { padding-left: 12.5rem !important; }
+                    .custom-padding-right { padding-right: 8rem !important; }
+                }
+            `}</style>
+            <h2 className="fw-bold text-dark mb-5" style={{ fontSize: 'clamp(2rem, 6vw, 2.5rem)', letterSpacing: '-0.02em' }}>
                 Case Studies
             </h2>
 
@@ -126,7 +134,7 @@ const CaseSection = () => {
             </div>
 
             {/* Custom Scrollbar */}
-            <div className="mt-3" style={{ paddingRight: '8rem' }}>
+            <div className="mt-3 custom-padding-right">
                 {/* Track */}
                 <div
                     className="position-relative rounded-pill"
