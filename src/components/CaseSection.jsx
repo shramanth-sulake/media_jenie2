@@ -91,15 +91,15 @@ const CaseSection = () => {
         : 30;
 
     return (
-        <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
-            <h2 className="fw-bold text-dark mb-5" style={{ fontSize: '2.5rem', letterSpacing: '-0.02em', marginLeft: '1rem' }}>
+        <div className="w-100 container-fluid py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '0' }}>
+            <h2 className="fw-bold text-dark mb-5" style={{ fontSize: '2.5rem', letterSpacing: '-0.02em' }}>
                 Case Studies
             </h2>
 
             {/* Cards Row */}
             <div
                 ref={scrollRef}
-                className="d-flex gap-4 pb-4 pt-2 w-100 px-3"
+                className="d-flex gap-4 pb-4 pt-2 w-100"
                 style={{
                     overflowX: 'auto',
                     overflowY: 'hidden',
@@ -117,7 +117,7 @@ const CaseSection = () => {
                         style={{
                             scrollSnapAlign: 'start',
                             flexShrink: 0,
-                            paddingRight: i === cases.length - 1 ? '1rem' : 0
+                            paddingRight: i === cases.length - 1 ? '8rem' : 0
                         }}
                     >
                         <CaseCard bgImage={c.bgImage} text={c.text} />
@@ -126,7 +126,7 @@ const CaseSection = () => {
             </div>
 
             {/* Custom Scrollbar */}
-            <div className="px-3 mt-3">
+            <div className="mt-3" style={{ paddingRight: '8rem' }}>
                 {/* Track */}
                 <div
                     className="position-relative rounded-pill"
