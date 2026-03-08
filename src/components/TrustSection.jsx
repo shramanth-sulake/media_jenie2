@@ -29,7 +29,7 @@ const TrustSection = () => {
         <div className="w-100 bg-white py-5 d-flex flex-column align-items-center font-sans">
 
             {/* 1. Fit: Our Lead-gen Service is perfect for... */}
-            <div className="container px-4 mb-5" style={{ maxWidth: '1000px' }}>
+            <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
                 <div className="w-100 p-4 p-md-5" style={{ backgroundColor: '#f4f4f4', borderRadius: '4px' }}>
                     <h2 className="fw-bold text-center text-dark mb-5" style={{ fontSize: '2rem', lineHeight: '1.3' }}>
                         Fit: Our Lead-gen <br className="d-none d-sm-block" />
