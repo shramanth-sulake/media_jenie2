@@ -91,7 +91,7 @@ const CaseSection = () => {
         : 30;
 
     return (
-        <div className="w-100 container px-3 py-5">
+        <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
             <h2 className="fw-bold text-dark mb-5" style={{ fontSize: '2.5rem', letterSpacing: '-0.02em', marginLeft: '1rem' }}>
                 Case Studies
             </h2>

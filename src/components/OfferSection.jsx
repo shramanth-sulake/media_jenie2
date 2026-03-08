@@ -20,26 +20,26 @@ const OfferSection = () => {
                 </div>
 
                 {/* Overlapping White Card */}
-                <div className="w-100 container px-3 position-relative" style={{ zIndex: 20, marginTop: '-8rem' }}>
-                    <div className="bg-white p-4 p-md-5 border-md-0 border shadow-sm mx-auto" style={{ maxWidth: '100%', boxShadow: '0px 15px 60px rgba(0,0,0,0.1) !important' }}>
-                        <h2 className="fw-bold text-dark mb-4 text-start" style={{ fontSize: '2rem', lineHeight: '1.25', letterSpacing: '-0.02em', maxWidth: '750px' }}>
+                <div className="w-100 container position-relative" style={{ zIndex: 20, marginTop: '-8rem', paddingLeft: '8rem', paddingRight: '8rem' }}>
+                    <div className="bg-white p-4 p-md-5 border-md-0 border shadow-sm" style={{ boxShadow: '0px 15px 60px rgba(0,0,0,0.1) !important' }}>
+                        <h2 className="fw-bold text-dark mb-4" style={{ fontSize: '2.5rem', lineHeight: '1.25', letterSpacing: '-0.02em' }}>
                             Problem you are facing, and we <br className="d-none d-md-block" /> understand it well here
                         </h2>
-
-                        <div className="mb-4 text-secondary text-start" style={{ fontSize: '0.95rem', lineHeight: '1.7', maxWidth: '850px', fontWeight: '500' }}>
-                            <p className="mb-0 text-dark">
-                                Most lead-gen programs focus on channels, and activities, assuming intent-of-buying. We work at "decision-science" level. We understand how your target customer take buying decision - which is spread across many touch-points and stages. We work at demand-signal-capture and demand-activation-signals, to generate quality and predictable lead pipeline for you.
+                        <div className="mb-5 text-secondary mt-4" style={{ fontSize: '1.1rem', lineHeight: '1.6', maxWidth: '500px', marginTop: '2rem' }}>
+                            <p className="mb-4">
+                                Most lead-gen programs focus on channels, and activities, assuming intent-of-buying.
+                                We work at "decision-science" level. We understand how your target customer take buying decision - which is spread across many touch-points and stages. We work at demand-signal-capture and demand-activation-signals, to generate quality and predictable lead pipeline for you.
                             </p>
                         </div>
 
-                        <div className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-start gap-3 mt-4">
-                            <button className="btn rounded-pill fw-bold d-flex align-items-center justify-content-center shadow-sm" style={{ backgroundColor: '#000', color: '#ffdb24', padding: '12px 28px', fontSize: '12px' }}>
-                                Book a 30 Mins Strtegy Call
-                                <svg className="ms-2" style={{ width: '12px', height: '12px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div className="d-flex flex-column flex-sm-row align-items-center gap-3 mt-4">
+                            <button className="btn rounded-pill fw-bold d-flex align-items-center justify-content-center shadow-sm" style={{ backgroundColor: '#000', color: '#ffdb24', padding: '14px 32px', fontSize: '15px' }}>
+                                Book a 30 Mins Strategy Call
+                                <svg className="ms-2" style={{ width: '16px', height: '16px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </button>
-                            <button className="btn btn-light rounded-pill fw-bold border border-secondary shadow-sm" style={{ backgroundColor: '#fff', color: '#000', padding: '12px 28px', fontSize: '12px' }}>
+                            <button className="btn btn-light rounded-pill fw-bold border border-secondary shadow-sm" style={{ backgroundColor: '#fff', color: '#000', padding: '14px 32px', fontSize: '15px' }}>
                                 Take a Free Audit (90 Sec)
                             </button>
                         </div>
@@ -48,7 +48,7 @@ const OfferSection = () => {
             </div>
 
             {/* --- SECTION 2: Yellow Audit Banner --- */}
-            <div className="w-100 container px-3 mb-5 mt-4">
+            <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
                 <div className="row g-0 align-items-center rounded-4 position-relative overflow-hidden shadow-sm" style={{ backgroundColor: '#fde047' }}>
 
                     {/* Content Left */}
@@ -96,7 +96,7 @@ const OfferSection = () => {
             </div>
 
             {/* --- SECTION 3: Our Approach/ framework --- */}
-            <div className="w-100 container px-3 mb-5">
+            <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
                 <h3 className="fw-bold text-dark mb-4" style={{ fontSize: '1.75rem' }}>Our Approach/ framework</h3>
 
                 <div className="position-relative overflow-hidden rounded-3" style={{ backgroundColor: '#f0f0f0', minHeight: '400px' }}>
@@ -148,7 +148,7 @@ const OfferSection = () => {
             </div>
 
             {/* --- SECTION 4: Our Process Flowchart --- */}
-            <div className="w-100 container px-3 mb-5">
+            <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
                 <h3 className="fw-bold text-dark mb-4" style={{ fontSize: '1.75rem' }}>Our Process</h3>
                 <img
                     src="/images/MediaJenie-Website-Dev-Process-Full 1.png"
