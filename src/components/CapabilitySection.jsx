@@ -2,8 +2,8 @@ import React from 'react';
 
 const CapabilitySection = () => {
     return (
-        <div className="w-100 bg-white py-5 d-flex flex-column align-items-center">
-            <div className="container px-4 py-5" style={{ maxWidth: '1000px' }}>
+        <div className="w-100 bg-white d-flex flex-column align-items-center">
+            <div className="w-100 container py-4 mt-5 mb-4" style={{ paddingLeft: '8rem', paddingRight: '8rem' }}>
                 <div className="text-center mb-5">
                     <h2 className="fw-bold text-dark mb-4" style={{ fontSize: '3.5rem', lineHeight: '1.25', letterSpacing: '-0.02em', color: '#2b2b2b' }}>
                         Capability: Your extended-team <br className="d-none d-md-block" /> for reliable lead-generation
